@@ -24,6 +24,10 @@ A desktop application that automatically reads scanned OMR (Optical Mark Recogni
 
 Python | OpenCV | NumPy | openpyxl | Pillow | Tkinter
 
+## Download
+
+Windows app (no Python needed): [Download latest release](https://github.com/AqsaImran-IT/omr-sheet-scanner/releases/latest)
+
 ## Installation
 
 ```bash
