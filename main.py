@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import sys
 import queue
 import threading
 import traceback
@@ -372,7 +373,7 @@ class ScannerGUI(tk.Tk):
         self.msg_queue: queue.Queue[tuple[str, object]] = queue.Queue()
         self.preview_photo: ImageTk.PhotoImage | None = None
 
-        base = Path(__file__).resolve().parent
+        base = Path(sys.executable).parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parent
         self.default_source = base / "source"
         self.output_folder = base / "output"
         self.selected_source_folder = self.default_source
