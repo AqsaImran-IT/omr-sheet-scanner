@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Private data
+source/
+Source/
+output/
+Output/
+*.xlsx
