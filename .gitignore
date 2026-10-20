@@ -9,3 +9,6 @@ Source/
 output/
 Output/
 *.xlsx
+build/
+dist/
+*.spec
